@@ -1,13 +1,13 @@
 import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
   Platform,
+  StyleSheet,
+  Text,
+  TextInput,
   TouchableOpacity,
-} from 'react-native';
+  View,
+} from 'react-native'
 
-export function Home(){
+export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome, Rodrigo</Text>
@@ -19,9 +19,9 @@ export function Home(){
       <TouchableOpacity style={styles.button} activeOpacity={0.7}>
         <Text style={styles.buttonText}>Add</Text>
       </TouchableOpacity>
-      <Text style={[styles.title, { marginTop: 50}]}>My Skills</Text>
+      <Text style={[styles.title, { marginTop: 50 }]}>My Skills</Text>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -56,4 +56,4 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
   },
-});
+})
